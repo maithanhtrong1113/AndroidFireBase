@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAction">
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddStudent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnAddStudent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddStudent" />
+
+    <EditText
+        android:id="@+id/addAddress"
+        android:layout_width="330dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/addAge"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/addAge"
+        app:layout_constraintTop_toBottomOf="@+id/addAge" />
+
+    <EditText
+        android:id="@+id/addAge"
+        android:layout_width="330dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/addName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/addName"
+        app:layout_constraintTop_toBottomOf="@+id/addName" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="AddForm"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/addName"
+        android:layout_width="330dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btnAddStudent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="@+id/addAddress"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/addAddress"
+        app:layout_constraintTop_toBottomOf="@+id/addAddress" />
+</androidx.constraintlayout.widget.ConstraintLayout>
